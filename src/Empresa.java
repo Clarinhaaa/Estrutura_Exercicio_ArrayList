@@ -3,9 +3,7 @@ public class Empresa {
     private String nome;
     private String telefone;
 
-    public Empresa() {
-        
-    }
+    public Empresa() {}
 
     public Empresa(String cnpj, String nome, String telefone) {
         this.cnpj = cnpj;
@@ -39,6 +37,6 @@ public class Empresa {
 
     @Override
     public String toString() {
-        return "Empresa [cnpj=" + cnpj + ", nome=" + nome + ", telefone=" + telefone + "]";
+        return "- Empresa\nCNPJ: " + cnpj + "\nNome: " + nome + "\nTelefone: " + telefone + "\n";
     }
 }

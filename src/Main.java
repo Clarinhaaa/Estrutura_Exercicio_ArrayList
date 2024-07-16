@@ -21,6 +21,8 @@ public class Main {
         regNegFun.cadastrarFuncionario(fun2);
         regNegFun.cadastrarFuncionario(fun3);
 
+        regNegFun.removerFuncionario("Clara");
+
         // Listagem
         System.out.println("EMPRESAS:");
         System.out.println(regNegEmp.listarEmpresa().toString());

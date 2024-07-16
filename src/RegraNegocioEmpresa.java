@@ -10,4 +10,12 @@ public class RegraNegocioEmpresa {
     public ArrayList<Empresa> listarEmpresa() {
         return this.lista;
     }
+
+    public void removerEmpresa(String nome) {
+        for(Empresa emp : this.lista) {
+            if (nome.equalsIgnoreCase(emp.getNome())) {
+                this.lista.remove(emp);
+            }
+        }
+    }
 }

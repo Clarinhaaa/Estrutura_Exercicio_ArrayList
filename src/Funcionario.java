@@ -5,9 +5,7 @@ public class Funcionario {
     private String telefone;
     private Empresa empresa;
 
-    public Funcionario() {
-    
-    }
+    public Funcionario() {}
 
     public Funcionario(String cpf, String nome, String rg, String telefone, Empresa empresa) {
         this.cpf = cpf;
@@ -59,9 +57,6 @@ public class Funcionario {
 
     @Override
     public String toString() {
-        return "Funcionario [cpf=" + cpf + ", nome=" + nome + ", rg=" + rg + ", telefone=" + telefone + ", empresa=" + empresa + "]";
+        return "- Funcionário\nCPF: " + cpf + "\nNome: " + nome + "\nRG: " + rg + "\nTelefone: " + telefone + "\nEmpresa: " + empresa + "\n";
     }
 }
-
-
-

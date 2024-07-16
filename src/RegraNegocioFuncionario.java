@@ -10,4 +10,12 @@ public class RegraNegocioFuncionario {
     public ArrayList<Funcionario> listarFuncionario() {
         return this.lista;
     }
+
+    public void removerFuncionario(String nome) {
+        for (Funcionario fun : this.lista) {
+            if (nome.equalsIgnoreCase(fun.getNome())) {
+                this.lista.remove(fun);
+            }
+        }
+    }
 }
